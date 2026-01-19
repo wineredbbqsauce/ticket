@@ -1,11 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SupportDesk – Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/dashboard.css" />
   </head>
   <body>
-    hello world
+    <header class="topbar">
+      <div class="logo">SupportDesk</div>
+
+      <nav class="topnav">
+        <a class="active">Dashboard</a>
+        <a href="#">Tickets</a>
+        <a href="#">Knowledge Base</a>
+        <a href="#">Reports</a>
+      </nav>
+
+      <div class="user">
+        <span class="avatar"></span>
+        John Doe
+      </div>
+    </header>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <a href="#" class="active">Dashboard</a>
+        <a href="index.html">Submit Ticket</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+
+        <div class="divider"></div>
+
+        <span class="sidebar-title">Help Center</span>
+        <a href="#">FAQs</a>
+        <a href="#">Live Chat</a>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <h1>Dashboard</h1>
+        <p class="welcome">Welcome back, John!</p>
+
+        <h2>Ticket Overview</h2>
+
+        <div class="overview">
+          <div class="overview-card blue">
+            <div class="icon">📁</div>
+            <div>
+              <p>Open Tickets</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="overview-card orange">
+            <div class="icon">⏳</div>
+            <div>
+              <p>In Progress</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="overview-card red">
+            <div class="icon">✔</div>
+            <div>
+              <p>Closed Tickets</p>
+              <strong>0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-header">
+          <h2>Recent Activity</h2>
+          <a href="#" class="link">View All Tickets →</a>
+        </div>
+
+        <div class="empty-state">
+          <div class="illustration">📋</div>
+          <h3>No recent activity</h3>
+          <p>There hasn't been any recent ticket activity.</p>
+        </div>
+      </main>
+
+      <!-- Right panel -->
+      <aside class="rightbar">
+        <div class="panel">
+          <h3>Announcements</h3>
+          <p>No announcements at this time.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Help Center</h3>
+          <a href="#" id="panel-a">FAQs</a>
+          <a href="#">Live Chat</a>
+        </div>
+      </aside>
+    </div>
 
     <a href="index.html">index.html</a>
     <script src="components/loadTitlebar.js"></script>

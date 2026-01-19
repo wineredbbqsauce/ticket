@@ -131,6 +131,11 @@ body {
   cursor: pointer;
 }
 
+.user-profile a {
+  color: white;
+  text-decoration: none;
+}
+
 .user-profile:hover {
   opacity: 0.9;
 }

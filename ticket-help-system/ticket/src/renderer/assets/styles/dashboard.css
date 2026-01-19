@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f6f8fc;
+    color: #1f2937;
+}
+
+/* Topbar */
+.topbar {
+    height: 60px;
+    background: #3f6db5;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.topnav {
+    margin: auto;
+}
+
+.topnav a {
+    margin: 0 12px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.topnav .active {
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c83ff, #9a5cff);
+}
+
+/* Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 230px 1fr 280px;
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e5e7eb;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: #374151;
+    text-decoration: none;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #eef2ff;
+    color: #3f6db5;
+}
+
+.divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 16px 0;
+}
+
+.sidebar-title {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Main */
+.main {
+    padding: 32px;
+}
+
+.welcome {
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+
+/* Overview cards */
+.overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.overview-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.overview-card strong {
+    font-size: 28px;
+}
+
+.overview-card.blue {
+    background: #eef5ff;
+}
+
+.overview-card.orange {
+    background: #fff7ed;
+}
+
+.overview-card.red {
+    background: #fff1f2;
+}
+
+.icon {
+    font-size: 32px;
+}
+
+/* Activity */
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #2563eb;
+    cursor: pointer;
+}
+
+.empty-state {
+    background: white;
+    margin-top: 16px;
+    padding: 64px;
+    border-radius: 16px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.illustration {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Rightbar */
+.rightbar {
+    padding: 20px;
+}
+
+.rightbar a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: #374151;
+    text-decoration: none;
+}
+
+.rightbar a.active,
+.rightbar a:hover {
+    background: #eef2ff;
+}
+
+.panel {
+    background: white;
+    padding: 16px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.panel h3 {
+    margin-top: 0;
+}
+
+#panel-a {
+    margin-top: 13px;
+}
