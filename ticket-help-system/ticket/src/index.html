@@ -12,20 +12,36 @@
       <div class="titlebar-title">SupportDesk</div>
       <div class="window-controls">
         <button
+          class="window-control-btn minimize"
+          id="minimize-btn"
+          onclick="window.electronAPI?.minimize()"
+        ></button>
+        <button
+          class="window-control-btn maximize"
+          id="maximize-btn"
+          onclick="window.electronAPI?.maximize()"
+        ></button>
+        <button
           class="window-control-btn close"
+          id="close-btn"
           onclick="window.electronAPI?.close()"
+        ></button>
+        <!-- <button
+          class="window-control-btn close"
+          onclick="window.electronAPI?.close()"  
           id="close-btn"
           ></button>
+        <button class="window-control-btn close" id="close-btn"></button>
         <button
           class="window-control-btn minimize"
           onclick="window.electronAPI?.minimize()"
           id="minimize-btn"
-          ></button>
+        ></button>
         <button
           class="window-control-btn maximize"
           onclick="window.electronAPI?.maximize()"
           id="maximize-btn"
-        ></button>
+        ></button> -->
       </div>
     </div>
 
@@ -90,7 +106,7 @@
           <p class="page-subtitle">Manage and track your support requests.</p>
         </div>
 
-        <button class="new-ticket-btn">+ New Ticket</button>
+        <button class="new-ticket-btn" id="new-ticket-btn">+ New Ticket</button>
 
         <div class="controls-bar">
           <div class="filter-group">
@@ -280,17 +296,13 @@
         </div>
       </div>
     </div>
+    <script src="renderer.js"></script>
     <script>
-      document.getElementById("minimize_btn").addEventListener("click", () => {
-        window.electronAPI?.minimize();
-      })
-      document.getElementById("maximize_btn").addEventListener("click", () => {
-        window.electronAPI?.maximize();
-      })
-      document.getElementById("close_btn").addEventListener("click", () => {
-        window.electronAPI?.close();
-      })
+      document
+        .getElementById("new-ticket-btn")
+        .addEventListener("click", () => {
+          window.location.href = "pages/login.html";
+        });
     </script>
-    <script src="main.js"></script>
   </body>
 </html>
