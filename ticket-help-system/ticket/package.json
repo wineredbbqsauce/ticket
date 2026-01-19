@@ -7,12 +7,21 @@
   "private": true,
   "scripts": {
     "start": "electron-forge start",
+    "dev": "electron . --dev",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
   },
-  "keywords": [],
+  "keywords": [
+    "ticket",
+    "system",
+    "electron"
+  ],
   "author": {
     "name": "Wineredbbqsauce",
     "email": "wineredbbqsauce@gmail.com"
@@ -33,5 +42,26 @@
     "@electron-forge/plugin-fuses": "^7.11.1",
     "@electron/fuses": "^1.8.0",
     "electron": "40.0.0"
+  },
+  "build": {
+    "appId": "com.yourname.ticket-system",
+    "productName": "ticket-system",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   }
 }

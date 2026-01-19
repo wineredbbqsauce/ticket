@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket System</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <!-- Custom title bar for Electron -->
+    <!-- Custom title bar for Electron
     <div class="titlebar">
       <div class="titlebar-title">SupportDesk</div>
       <div class="window-controls">
@@ -26,24 +26,8 @@
           id="close-btn"
           onclick="window.electronAPI?.close()"
         ></button>
-        <!-- <button
-          class="window-control-btn close"
-          onclick="window.electronAPI?.close()"  
-          id="close-btn"
-          ></button>
-        <button class="window-control-btn close" id="close-btn"></button>
-        <button
-          class="window-control-btn minimize"
-          onclick="window.electronAPI?.minimize()"
-          id="minimize-btn"
-        ></button>
-        <button
-          class="window-control-btn maximize"
-          onclick="window.electronAPI?.maximize()"
-          id="maximize-btn"
-        ></button> -->
       </div>
-    </div>
+    </div> -->
 
     <div class="top-nav">
       <div class="logo">
@@ -68,7 +52,7 @@
 
     <div class="main-container">
       <div class="sidebar">
-        <a href="#" class="sidebar-item">
+        <a href="dashboard.html" class="sidebar-item">
           <span>📊</span>
           <span>Dashboard</span>
         </a>
@@ -296,12 +280,13 @@
         </div>
       </div>
     </div>
+    <script src="../renderer/components/loadTitlebar.js"></script>
     <script src="renderer.js"></script>
     <script>
       document
         .getElementById("new-ticket-btn")
         .addEventListener("click", () => {
-          window.location.href = "pages/login.html";
+          window.location.href = "login.html";
         });
     </script>
   </body>
