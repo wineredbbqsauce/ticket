@@ -5,7 +5,7 @@ async function loadTitlebar() {
   document.title = APP_TITLE;
 
   // HTML
-  const response = await fetch("./components/titlebar.html");
+  const response = await fetch("./components/titleBar/titlebar.html");
   const titlebarHTML = await response.text();
   document.body.insertAdjacentHTML("afterbegin", titlebarHTML);
 
@@ -14,7 +14,7 @@ async function loadTitlebar() {
     const link = document.createElement("link");
     link.id = "titlebar-css";
     link.rel = "stylesheet";
-    link.href = "./components/titlebar.css";
+    link.href = "./components/titleBar/titlebar.css";
     document.head.appendChild(link);
   }
 

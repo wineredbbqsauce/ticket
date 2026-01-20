@@ -29,7 +29,9 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "renderer/dashboard.html"));
+  mainWindow.loadFile(
+    path.join(__dirname, "renderer/components/base/base.html"),
+  );
 
   // // Open the DevTools.
   // mainWindow.webContents.openDevTools();

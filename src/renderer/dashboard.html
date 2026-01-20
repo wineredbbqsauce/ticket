@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket System – Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/base.css" />
+    <link rel="stylesheet" href="assets/styles/dashboard.css" />
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="logo">
+        <div class="logo-icon">💬</div>
+        <span>SupportDesk</span>
+      </div>
+      <div class="nav-links">
+        <a href="#dashboard" class="active">Dashboard</a>
+        <a href="index.html">Tickets</a>
+        <a href="#kb">Knowledge Base</a>
+        <a href="#reports">Reports</a>
+      </div>
+      <div class="user-section">
+        <span class="bell-icon">🔔</span>
+        <div class="user-profile">
+          <div class="user-avatar"></div>
+          <span><a href="login.html">John Doe</a></span>
+          <span>▼</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="sidebar">
+        <a href="dashboard.html" class="sidebar-item active">
+          <span>📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="index.html" class="sidebar-item">
+          <span>🎫</span>
+          <span>Tickets</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <span>📝</span>
+          <span>Submit Ticket</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <span>👤</span>
+          <span>My Profile</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <span>⚙️</span>
+          <span>Settings</span>
+        </a>
+        <div class="sidebar-divider"></div>
+        <div class="help-center">Help Center</div>
+        <a href="#" class="sidebar-item">
+          <span>❓</span>
+          <span>FAQs</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <span>💬</span>
+          <span>Live Chat</span>
+        </a>
+      </div>
+
+      <div class="content">
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <p class="page-subtitle">Welcome back, John!</p>
+        </div>
+
+        <h2>Ticket Overview</h2>
+
+        <div class="overview">
+          <div class="overview-card blue">
+            <div class="icon">📁</div>
+            <div>
+              <p>Open Tickets</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="overview-card orange">
+            <div class="icon">⏳</div>
+            <div>
+              <p>In Progress</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="overview-card red">
+            <div class="icon">✔</div>
+            <div>
+              <p>Closed Tickets</p>
+              <strong>0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-header">
+          <h2>Recent Activity</h2>
+          <a href="#" class="link">View All Tickets →</a>
+        </div>
+
+        <div class="empty-state">
+          <div class="illustration">📋</div>
+          <h3>No recent activity</h3>
+          <p>There hasn't been any recent ticket activity.</p>
+        </div>
+      </div>
+
+      <div class="sidebar-right">
+        <div class="stats-box">
+          <h3>Ticket Stats</h3>
+          <div class="stat-item">
+            <div class="stat-label">
+              <div class="stat-indicator indicator-green"></div>
+              <span>Open Tickets</span>
+            </div>
+            <div class="stat-value">3</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">
+              <div class="stat-indicator indicator-blue"></div>
+              <span>In Progress</span>
+            </div>
+            <div class="stat-value">2</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">
+              <div class="stat-indicator indicator-red"></div>
+              <span>Closed Tickets</span>
+            </div>
+            <div class="stat-value">18</div>
+          </div>
+        </div>
+
+        <div class="announcements">
+          <h3>Announcements</h3>
+          <div class="announcement-item">
+            System Maintenance Scheduled for April 25th
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="components/titleBar/loadTitlebar.js"></script>
+  </body>
+</html>

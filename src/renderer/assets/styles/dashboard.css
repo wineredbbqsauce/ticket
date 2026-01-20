@@ -1,0 +1,78 @@
+/* Dashboard-specific styles */
+
+/* Overview cards */
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.overview-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.overview-card strong {
+  font-size: 28px;
+}
+
+.overview-card.blue {
+  background: #eef5ff;
+}
+
+.overview-card.orange {
+  background: #fff7ed;
+}
+
+.overview-card.red {
+  background: #fff1f2;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+/* Activity */
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 16px 0;
+}
+
+.link {
+  color: #1e6fcc;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  background: white;
+  margin-top: 16px;
+  padding: 64px;
+  border-radius: 16px;
+  text-align: center;
+  color: #666;
+}
+
+.empty-state h3 {
+  color: #333;
+  margin: 16px 0 8px 0;
+}
+
+.empty-state p {
+  color: #999;
+}
+
+.illustration {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
