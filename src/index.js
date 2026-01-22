@@ -9,10 +9,10 @@ const path = require("node:path");
  *
  */
 
-const startServer = require("../backend/sever.js");
+// const startServer = require("../backend/sever.js");
 
-let mainWindow;
-let serverInstance;
+// let mainWindow;
+// let serverInstance;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -45,7 +45,7 @@ const createWindow = () => {
 app.whenReady().then(async () => {
   createWindow();
 
-  serverInstance = await startServer();
+  // serverInstance = await startServer();
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   app.on("activate", () => {
